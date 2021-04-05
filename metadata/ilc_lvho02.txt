@@ -1,0 +1,14 @@
+Distribution of population by tenure status, type of household and income group - EU-SILC survey
+Title:
+Distribution of population by tenure status, type of household and income group - EU-SILC survey
+Code:
+ilc_lvho02
+Last update of data:
+24/03/2021
+Last table structure change:
+11/02/2021
+Number of values:
+201348
+Data availability - by country:
+Code	Label	Oldest data	Most recent data
+-	overall	2003	2020
