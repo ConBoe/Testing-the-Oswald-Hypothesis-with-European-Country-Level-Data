@@ -1,0 +1,14 @@
+Unemployment rates by sex, age and citizenship (%)
+Title:
+Unemployment rates by sex, age and citizenship (%)
+Code:
+lfsa_urgan
+Last update of data:
+11/11/2020
+Last table structure change:
+08/02/2021
+Number of values:
+509381
+Data availability - by country:
+Code	Label	Oldest data	Most recent data
+-	overall	1995	2019
