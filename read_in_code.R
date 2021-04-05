@@ -1,24 +1,21 @@
 
-
-
-
-#setwd("C:/Users/user/Desktop/Masterstudium/SS2021/Data_Stewardship/DS_Exercise_1")
+###
 
 ##ilc contains the data for tenur
-path_ilc_0<-"01_downloaded_data/ilc_lvho02.tsv"
+path_ilc_0<-"ilc_lvho02.tsv"
 ilc_1<-read.table(path_ilc_0 ,sep ='\t', header=TRUE)
 
 
-path_ilc_1<-"03_Data_after_prepairation/ilc_1.csv"
+path_ilc_1<-"ilc_1.csv"
 write.table(ilc_1, file=path_ilc_1, sep=",",quote=FALSE, row.names = FALSE)
 
 
 
-path_lfsa_0<-"01_downloaded_data/lfsa_urgan.tsv"
+path_lfsa_0<-"lfsa_urgan.tsv"
 lfsa_1<-read.table(path_lfsa_0,sep ='\t',header=TRUE)
 
 
-path_lfsa_1<-"03_Data_after_prepairation/lfsa_1.csv"
+path_lfsa_1<-"lfsa_1.csv"
 write.table(lfsa_1, file=path_lfsa_1, sep=",",quote=FALSE,row.names=FALSE)
 
 
@@ -67,7 +64,7 @@ lfsa_3<-lfsa_2[lfsa_2$sex == "T" &
 ## therfore we will leave out EA19,  
 
 geocodes<-lfsa_3$geo[-c(9,13,14,15)]
-############################################ hier noch stabiler machen für änderungen
+############################################ hier noch stabiler machen fÃ¼r Ã¤nderungen
 
 ## just the geo areas we need
 
@@ -121,8 +118,8 @@ sapply(X=lfsa_4[,2:26], dataFlags, pattern="z")
 ### only flags in the dataset lfsa are "b" and "Na", 
 
 ### Important question: what to do with the error code...
-### für flags ":" einfach mit NA ersetzen, für n und p einzelfälle bewerten und potenziell eine 
-### boolain var für die 3 spallten. Problem mit fehlercode b
+### fÃ¼r flags ":" einfach mit NA ersetzen, fÃ¼r n und p einzelfÃ¤lle bewerten und potenziell eine 
+### boolain var fÃ¼r die 3 spallten. Problem mit fehlercode b
 
 ### We make a simplified experiment where we only look at the data of Ownership vs Renting, 
 ### no subtypes of renting or owning. Therefor w only need the variable Owning as we want
@@ -192,18 +189,18 @@ ilc_6_flags<-cbind(ilc_5_flag_b,ilc_flag_p_2015)
 ### We will now save the data that we produced in a csv files. One file for the data itself and one for its flags for each ownership rate and unemplymentrate
 
 
-path_ilc_6<-"C:/Users/user/Desktop/Masterstudium/SS2021/Data_Stewardship/DS_Exercise_1/03_Data_after_prepairation/ownership_rate.csv"
+path_ilc_6<-"ownership_rate.csv"
 write.csv(ilc_6[,-1], file=path_ilc_6,row.names = ilc_6[,1])
 
-path_ilc_6_flags<-"C:/Users/user/Desktop/Masterstudium/SS2021/Data_Stewardship/DS_Exercise_1/03_Data_after_prepairation/ownership_rate_flags.csv"
+path_ilc_6_flags<-"ownership_rate_flags.csv"
 write.csv(ilc_6_flags, file=path_ilc_6_flags,row.names = ilc_6[,1])
 
 
 
-path_lfsa_6<-"C:/Users/user/Desktop/Masterstudium/SS2021/Data_Stewardship/DS_Exercise_1/03_Data_after_prepairation/unemployment_rate.csv"
+path_lfsa_6<-"unemployment_rate.csv"
 write.csv(lfsa_6[,-1], file=path_lfsa_6, row.names =  lfsa_6[,1])
 
-path_lfsa_6_flags<-"C:/Users/user/Desktop/Masterstudium/SS2021/Data_Stewardship/DS_Exercise_1/03_Data_after_prepairation/unemployment_rate_flags.csv"
+path_lfsa_6_flags<-"unemployment_rate_flags.csv"
 write.csv(lfsa_5_flag_b, file=path_lfsa_6_flags,row.names =  lfsa_6[,1])
 
 
@@ -256,7 +253,5 @@ dev.off()
 
 }
 
-which.max(unemployment[,"X2019"])
-unemployment[10,]
 
-my### It seems like the data does not support the Hypothesis
+### It seems like the data does not support the Hypothesis
