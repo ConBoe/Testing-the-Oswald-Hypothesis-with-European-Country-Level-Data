@@ -31,9 +31,9 @@ Annexes (including footnotes)
 
 
 For any question on data and metadata, please contact: EUROPEAN STATISTICAL DATA SUPPORT		
-Download
 
-1. Contact	Top
+
+1. Contact	
 1.1. Contact organisation	
 Eurostat, the statistical office of the European Union
 
@@ -44,12 +44,12 @@ F4: Quality of life
 2920 Luxembourg LUXEMBOURG
 
 
-2. Metadata update	Top
+2. Metadata update	
 2.1. Metadata last certified	30/01/2020
 2.2. Metadata last posted	30/01/2020
 2.3. Metadata last update	30/01/2020
 
-3. Statistical presentation	Top
+3. Statistical presentation	
 3.1. Data description
 The domain "Income and living conditions" covers four topics: people at risk of poverty or social exclusion, income distribution and monetary poverty, living conditions and material deprivation, which are again structured into collections of indicators on specific topics.
 
@@ -268,11 +268,11 @@ During the transition between the end of ECHP and start of EU-SILC (up to 2007 i
 Not applicable
 
 
-4. Unit of measure	Top
+4. Unit of measure	
 Most indicators are reported as rates. Some are reported in other units (e.g. numbers, monetary units, etc.)
 
 
-5. Reference Period	Top
+5. Reference Period	
 The various statistics are generally presented on an annual basis (the survey year, whatever the underlying income reference period), although certain longitudinal indicators may cover a longer period (e.g. 4 years).
 
 The income reference period in EU-SILC is a fixed 12-month period (such as the previous calendar or tax year) for all countries except IE for which the survey is continuous and income is collected for the last twelve months.
@@ -280,7 +280,7 @@ The income reference period in EU-SILC is a fixed 12-month period (such as the p
 Other data is typically collected on the date of the survey.
 
 
-6. Institutional Mandate	Top
+6. Institutional Mandate	
 6.1. Institutional Mandate - legal acts and other agreements
 Data collection
 
@@ -323,7 +323,7 @@ For more information on policy developments, refer to the European Commission's 
 Not applicable
 
 
-7. Confidentiality	Top
+7. Confidentiality	
 7.1. Confidentiality - policy
 Regulation (EC) No 223/2009 on European statistics (recital 24 and Article 20(4)) of 11 March 2009 (OJ L 87, p. 164), stipulates the need to establish common principles and guidelines ensuring the confidentiality of data used for the production of European statistics and the access to those confidential data with due account for technical developments and the requirements of users in a democratic society.
 
@@ -350,7 +350,7 @@ u          unreliable (i.e. due to small sample size)
 p          provisional
 
 
-8. Release policy	Top
+8. Release policy	
 8.1. Release calendar
 There is no special release calendar. Indicators based on national SILC data are published soon after its delivery and acceptance. In general it takes place in the course of year N+1 (where N = year of data collection) in case of indicators based on cross-sectional data and starting from the second half of year N+1 in case of indicators based on longitudinal data.
 
@@ -363,11 +363,11 @@ Not applicable.
 In line with the Community legal framework and the European Statistics Code of Practice Eurostat disseminates European statistics on Eurostat's website (see item 10 - 'Accessibility and clarity') respecting professional independence and in an objective, professional and transparent manner in which all users are treated equitably. The detailed arrangements are governed by the Eurostat protocol on impartial access to Eurostat data for users.
 
 
-9. Frequency of dissemination	Top
+9. Frequency of dissemination	
 Annual
 
 
-10. Accessibility and clarity	Top
+10. Accessibility and clarity	
 10.1. Dissemination format - News release
 News releases on-line
 
@@ -431,7 +431,7 @@ Regulation CE 28/2004 on the content of intermediate and final quality reports p
 Comparative EU Quality Reports are available on Eurostat website: EU Quality Reports
 National Quality Reports are available on Eurostat website: National Quality Reports
 
-11. Quality management	Top
+11. Quality management	
 11.1. Quality assurance
 EU-SILC is based on a framework Regulation (1177/2003) that defines the scope, definitions, time reference, characteristics of the data, data required, sampling, sample sizes, transmission of data, publication, access for scientific purposes, financing, reports and studies. In addition, Eurostat and Member States have developed the technical aspects of the instrument, in particular one Regulation on 'Quality Reports' (28/2004).
 
@@ -443,7 +443,7 @@ Output standardisation is achieved by defining the format (list and content of t
 Data are accompanied with quality reports analysing the accuracy, coherence and comparability of the data. Detailed information on quality documentation is presented above under 10.7.
 
 
-12. Relevance	Top
+12. Relevance	
 12.1. Relevance - User Needs
 EU-SILC the main users are:
 
@@ -476,7 +476,7 @@ EU-SILC may exclude small parts of the national territory amounting to no more t
 EU-SILC covers only people living in private households (all persons aged 16 and over within the household are eligible for the operation), i.e. persons living in collective households and in institutions are generally excluded from the target population. 
 
 
-13. Accuracy	Top
+13. Accuracy	
 13.1. Accuracy - overall
 According to the Regulation 1982/2003 on sampling and tracing rules, for all components of EU-SILC (whether survey or register based), the cross-sectional and longitudinal (initial sample) data are to be based on a nationally representative probability sample of the population residing in private households within the country, irrespective of language, nationality or legal residence status. The sampling frame and methods of sample selection should ensure that every individual and household in the target population is assigned a known and non-zero probability of selection.
 
@@ -543,7 +543,7 @@ Total non-response of selected household/individuals is required to be below 40%
 Item non-response for non income variable is limited to 5%. When non-response in income components affects a subcomponent collected through interview, statistical imputation or modelling is required. This aspect is controlled in the datasets through imputation flags which represent the proportion of collected over recorded amounts.
 
 
-14. Timeliness and punctuality	Top
+14. Timeliness and punctuality	
 14.1. Timeliness
 Indicators based on national SILC data are published on Eurostat website soon after its delivery and acceptance. In general it takes place in the course of year N+1 (where N = year of data collection) in case of indicators based on cross-sectional data and starting from the second half of year N+1 in case of indicators based on longitudinal data.
 
@@ -555,7 +555,7 @@ In addition, anonymized EU cross-sectional microdata files to be used for resear
 For information on punctuality of the national SILC data please consult the EU quality reports: EU Quality Reports
 
 
-15. Coherence and comparability	Top
+15. Coherence and comparability	
 15.1. Comparability - geographical
 To ensure comparability of data and/or indicators, i.e. to ensure quality of data as defined by Eurostat, EU-SILC has opted for an ex-ante output harmonization strategy.
 
@@ -589,11 +589,11 @@ Further coherence analysis with other surveys like Labour Force Survey or Househ
 Not applicable
 
 
-16. Cost and Burden	Top
+16. Cost and Burden	
 EU-SILC was designed to keep respondent burden controlled so to avoid to high non-response rate and to ensure good quality of the information collected. The target is to limit the total length of interviewing household in average below 60 minutes. Significant decrease of interview duration is observed in countries using administrative data.
 
 
-17. Data revision	Top
+17. Data revision	
 17.1. Data revision - policy
 Errors, whether arising from input data or calculation methodology, are corrected as soon as possible following their identification, and replacement figures are published.
 
@@ -609,7 +609,7 @@ The development of indicators under the Open Method of Coordination is a transpa
 Revisions of previously released EU-SILC data may happen in case major errors are identified in the data delivered or in their processing.
 
 
-18. Statistical processing	Top
+18. Statistical processing	
 18.1. Source data
 ECHP:
 
@@ -645,10 +645,10 @@ Estimates at aggregate level (e.g. EU-27_2019) are calculated as the population-
 Missing survey data is imputed using procedures specified in EU-SILC implementation regulation 1981/2003. This includes income data, household composition data and other elements.
 
 
-19. Comment	Top
+19. Comment	
 No notes
 
 
-Related metadata	Top
+Related metadata	
 
-Annexes	Top
+Annexes	
