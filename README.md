@@ -7,10 +7,6 @@ We find that the evidence is weak at best before the finacial crisis but becomes
 ## How to Use
 The R code is written for R version 4.0.3 (2020-10-10).
 
-
-
 The r-code is used to filter and then save data downloaded from EuroStat as well as to do LS regressions for the years 2006, 2013 and 2019. Plots for these regressions are created and saved as png files.
 
-##
 
-R version 4.0.3 (2020-10-10)
