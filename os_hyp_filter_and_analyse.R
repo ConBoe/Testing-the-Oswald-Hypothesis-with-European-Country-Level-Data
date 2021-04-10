@@ -1,6 +1,4 @@
 
-###
-
 ##ilc contains the data for tenur
 path_ilc_0<-"data/ilc_lvho02.tsv"
 ilc_1<-read.table(path_ilc_0 ,sep ='\t', header=TRUE)
@@ -44,8 +42,8 @@ ilc_3<-ilc_2[ilc_2$incgr== "TOTAL" &
 ilc_3$tenure<-as.factor(ilc_3$tenure)
 
 
-## For the analysis we are only intrested in the in country
-## unemploymentrat of the primary working age (Y25-54) , therefor we will only look at the overall values 
+## For the analysis we are only intrested in the country
+## unemploymentrat of the primary working age (Y25-54), therefor we will only look at the overall values 
 ## of sex and citizenship (T for sex and TOTAL for citizenship ).
 ## unit is PC for all entries therfore we leave it out aswell
 
@@ -94,8 +92,8 @@ sapply(X=ilc_4[,3:20], dataFlags, pattern="u")
 sapply(X=ilc_4[,3:20], dataFlags, pattern="z")
 sapply(X=ilc_4[,3:20], dataFlags, pattern=":")
 
-#b (time series break)(viele), n (n = not significant)(eine in 2019),
-# p (p = provisional)(7 in 2020 un 7 in 2015), : (in fast jedem jahr, nur 2018-2013 nicht)
+#b (time series break)(a lot), n (n = not significant)(one in 2019),
+#p (p = provisional)(7 in 2020 und 7 in 2015), : (in almost every year, only inbetween 2018-2013 are non)
 
 
 
@@ -195,53 +193,3 @@ write.csv(lfsa_5_flag_b, file=path_lfsa_6_flags,row.names =  lfsa_6[,1])
 
 
 
-### the problem with time series breaks is that they influence the data of all following years.
-### so censoring them does not help...
-
-### we now go on with our analysis
-
-
-
-
-homeownership<-read.csv(file=path_ilc_6,row.names = 1)
-unemployment<-read.csv(file=path_lfsa_6,row.names=1)
-
-summary(homeownership)
-summary(t(homeownership))
-
-
-plot(2019:2006,homeownership["AT",-c(15,16,17)], type="l",ylim= c(40,99))
-
-
-for(i in 2:35){
-  lines(2019:2006,homeownership[i,-c(15,16,17)], type="l")
-}
-
-
-mytestyear<-c("X2006","X2013","X2019")
-### We make the same test as Oswald did at three different times. 2006, 2013 and 2019.
-for(i in 1:3){
-
-png(file = paste("graphics/plot_",i,".png", sep = ""),width=500,height=300)
-
-plot(homeownership[,mytestyear[i]],unemployment[,mytestyear[1]],
-     main= paste("Homeownership Rate vs Unemployment in ",mytestyear[i]),
-     xlab = "Homeownership Rate in %",
-     ylab = "Unemployment Rate in %",
-     xlim=c(40,100))
-
-mylm<-lm(unemployment[,mytestyear[1]]~homeownership[,mytestyear[i]])
-abline(mylm,col=2)
-
-legend("topleft",
-       legend= c("Datapoints", "LS-Regression Line"),
-       col=c(1,2),
-       lty = c(0,1),
-       pch = c(1,0))
-
-dev.off()
-
-}
-
-
-### It seems like the data does not support the Hypothesis
