@@ -2,20 +2,20 @@
 ###
 
 ##ilc contains the data for tenur
-path_ilc_0<-"ilc_lvho02.tsv"
+path_ilc_0<-"data/ilc_lvho02.tsv"
 ilc_1<-read.table(path_ilc_0 ,sep ='\t', header=TRUE)
 
 
-path_ilc_1<-"ilc_1.csv"
+path_ilc_1<-"data/ilc_1.csv"
 write.table(ilc_1, file=path_ilc_1, sep=",",quote=FALSE, row.names = FALSE)
 
 
 
-path_lfsa_0<-"lfsa_urgan.tsv"
+path_lfsa_0<-"data/lfsa_urgan.tsv"
 lfsa_1<-read.table(path_lfsa_0,sep ='\t',header=TRUE)
 
 
-path_lfsa_1<-"lfsa_1.csv"
+path_lfsa_1<-"data/lfsa_1.csv"
 write.table(lfsa_1, file=path_lfsa_1, sep=",",quote=FALSE,row.names=FALSE)
 
 
@@ -171,16 +171,6 @@ lfsa_6tmp<- data.frame(apply(X= lfsa_6tmp[,],MARGIN=2, as.numeric))
 lfsa_6<-cbind(lfsa_5[,1],lfsa_6tmp)
 colnames(lfsa_6)[1]<-"geo"
 
-str(lfsa_6tmp)
-
-str(ilc_6tmp)
-
-str(ilc_5)
-str(ilc_6)
-
-str(lfsa_5)
-str(lfsa_6)
-summary(lfsa_6)
 
 ### dataflags
 ilc_6_flags<-cbind(ilc_5_flag_b,ilc_flag_p_2015)
@@ -189,18 +179,18 @@ ilc_6_flags<-cbind(ilc_5_flag_b,ilc_flag_p_2015)
 ### We will now save the data that we produced in a csv files. One file for the data itself and one for its flags for each ownership rate and unemplymentrate
 
 
-path_ilc_6<-"ownership_rate.csv"
+path_ilc_6<-"data/ownership_rate.csv"
 write.csv(ilc_6[,-1], file=path_ilc_6,row.names = ilc_6[,1])
 
-path_ilc_6_flags<-"ownership_rate_flags.csv"
+path_ilc_6_flags<-"data/ownership_rate_flags.csv"
 write.csv(ilc_6_flags, file=path_ilc_6_flags,row.names = ilc_6[,1])
 
 
 
-path_lfsa_6<-"unemployment_rate.csv"
+path_lfsa_6<-"data/unemployment_rate.csv"
 write.csv(lfsa_6[,-1], file=path_lfsa_6, row.names =  lfsa_6[,1])
 
-path_lfsa_6_flags<-"unemployment_rate_flags.csv"
+path_lfsa_6_flags<-"data/unemployment_rate_flags.csv"
 write.csv(lfsa_5_flag_b, file=path_lfsa_6_flags,row.names =  lfsa_6[,1])
 
 
@@ -232,7 +222,7 @@ mytestyear<-c("X2006","X2013","X2019")
 ### We make the same test as Oswald did at three different times. 2006, 2013 and 2019.
 for(i in 1:3){
 
-png(file = paste("04_graphics/plot_",i,".png", sep = ""),width=500,height=300)
+png(file = paste("graphics/plot_",i,".png", sep = ""),width=500,height=300)
 
 plot(homeownership[,mytestyear[i]],unemployment[,mytestyear[1]],
      main= paste("Homeownership Rate vs Unemployment in ",mytestyear[i]),
