@@ -27,6 +27,8 @@ The three graphics produced by the code can be found in the folder 'graphics'.
 ### Code 
 The code can be found in the rood directory of this repository. The two files are 'os_filter.R' and 'os_analysis'. For further information on them see the 'how to use' section of this README file.
 
+### Metadat
+
 ## How to Use
 The R code is written for R version 4.0.3 (2020-10-10).
 
