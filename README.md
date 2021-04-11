@@ -19,9 +19,13 @@ The files 'ilc_lvho02.tsv' and 'lfsa_urgan.tsv' have a simular structur. The fir
 Meanings of the variables in the first coulmn and there values can be found in the codelist.
 
 ### Codelists
-The codelists can be found in the folder 'codelists'. Codelist give explainations of the factor variables and there values.
+The codelists can be found in the folder 'codelists'. Codelist give explainations of the factor variables and there values. The meaning of the varible itself can be found in 'dimlst.dic'. The meaning of each value of these variables can be found in the acording .dic file.
 
+### Graphics
+The three graphics produced by the code can be found in the folder 'graphics'.
 
+### Code 
+The code can be found in the rood directory of this repository. The two files are 'os_filter.R' and 'os_analysis'. For further information on them see the 'how to use' section of this README file.
 
 ## How to Use
 The R code is written for R version 4.0.3 (2020-10-10).
