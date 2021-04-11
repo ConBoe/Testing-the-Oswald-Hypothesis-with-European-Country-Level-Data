@@ -6,12 +6,22 @@ We find that the evidence is weak at best before the finacial crisis but becomes
 
 ## Structur Explained
 
+### Data
 The data downloaded from EuroStat as well as the filtered data can be found in the folder 'data'. 
 The downloaded file 'ilc_lvho02.tsv' contains multiple timeseries of different nations on homeownership rate as well as additional catagories we do not use. 
 The file 'lfsa_urgan.tsv' contains multiple timeseries of different nations on unemplyoment rate rate as well as additional catagories we do not use. 
 The file 'ownership_rate.csv' contains the filtered data on homeownership that we use for the analysis. The file 'ownership_rate_flags.csv' contains the error flags for the data from in 'ownership_rate.csv'.
-
 The file 'unemployment_rate.csv' contains the filtered data on unemployment that we use for the analysis. The file 'unemployment_rate_flags.csv' contains the error flags for the data from in 'unemployment_rate.csv'.
+
+
+The files 'ilc_lvho02.tsv' and 'lfsa_urgan.tsv' have a simular structur. The first column contains a multible of variables (incgrp,hhtyp,tenure geo for ilc_lvho02.tsv and unit,sex,age,citizen,geo for lfsa_urgan.tsv) which combine to one factor. Each following column contains the values for one year. They also contain errorflags, which are letters indicating posisble statistical problems with the specific value (e.g. small samplesize, timeseries breaks,...).
+
+Meanings of the variables in the first coulmn and there values can be found in the codelist.
+
+### Codelists
+The codelists can be found in the folder 'codelists'. Codelist give explainations of the factor variables and there values.
+
+
 
 ## How to Use
 The R code is written for R version 4.0.3 (2020-10-10).
@@ -20,6 +30,8 @@ The code is seperated into two files in the root directory, 'os_filter.r' and 'o
 This is either possible:
 1. from EuroStat using the code ilc_lvho02 and lfsa_urgan in the search function of the website and clicking the 'download tsv' button. This will download a .zip file that must be unpacked (use WinRa or a simular free software). 
 2. from this [reposetory](https://github.com/ConBoe/Testing-the-Oswald-Hypothesis-with-European-Country-Level-Data/tree/main/data) directly.
+
+(functionally of the code can not be garunteed for newly downloaded data from EuroStat due to possible structural changes)
 
 Save the files in a folder that you name 'data' and use the setwd function in R to the path where this folder is stored. ( type '?setwd' in the R console for help). 
 
